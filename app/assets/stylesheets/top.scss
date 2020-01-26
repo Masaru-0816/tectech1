@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  font-family: century;
+  position: relative;
+  border: 0px;
+
+  // アニメーション フェードイン
+  animation-name: fadein;
+  animation-duration: 2s;
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }  
+  
+  .header {
+    position: fixed;
+    height: 120px;
+    line-height: 110px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 40px;
+    display: flex;
+    
+    &_logo {
+    }
+    
+    &_user {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      
+      &_about {
+        height: 100%;
+        width: 130px;
+        text-align: center;
+        .btn-about {
+          display: inline-block;
+          height: 80%;
+          line-height: 80px;
+          // max-width: 130px;
+          // text-align: left;
+          background-color: rgba(189, 139, 3, 0.877);
+          font-size: 16px;
+          color: #FFF;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 0px 16px;
+          border: 1px dashed #FFF;
+          box-shadow: 0px 0px 0px 5px rgba(165, 108, 2, 0.795);
+          /* box-shadowで外枠を */
+          p {
+            color: white;
+            line-height: 80px;
+          }
+        }
+        .btn-about:hover {
+          opacity: 0.6;
+        }
+      }
+      &_signup {
+        height: 100%;
+        width: 130px;
+        text-align: center;
+        .btn-signup {
+          display: inline-block;
+          height: 80%;
+          line-height: 80px;
+          // max-width: 130px;
+          // text-align: left;
+          background-color: rgba(189, 139, 3, 0.877);
+          font-size: 16px;
+          color: #FFF;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 0px 16px;
+          border: 1px dashed #FFF;
+          box-shadow: 0px 0px 0px 5px rgba(165, 108, 2, 0.795);
+          /* box-shadowで外枠を */
+          p {
+            color: white;
+            line-height: 80px;
+          }
+        }
+        .btn-signup:hover {
+          opacity: 0.6;
+        }
+      }
+      &_login {
+        height: 100%;
+        // background-color: orange;
+        width: 130px;
+        text-align: center;
+        margin-right: 20px;
+        border-radius: 30px;
+        .btn-login {
+          display: inline-block;
+          height: 80%;
+          line-height: 80px;
+          // max-width: 130px;
+          // text-align: left;
+          background-color: rgba(189, 139, 3, 0.877);
+          font-size: 16px;
+          color: #FFF;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 0px 16px;
+          border: 1px dashed #FFF;
+          box-shadow: 0px 0px 0px 5px rgba(165, 108, 2, 0.795);
+          /* box-shadowで外枠を */
+          p {
+            color: white;
+            line-height: 80px;
+          }
+        }
+        .btn-login:hover {
+          opacity: 0.6;
+        }
+      }
+      &_menu {
+        height: 100%;
+        // background-color: orange;
+        width: 130px;
+        text-align: center;
+        margin-right: 20px;
+        border-radius: 30px;
+        .btn-menu {
+          color: rgba(189, 139, 3, 0.877);
+          font-size: 50px;
+        }
+        .btn-menu:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+  
+  
+  .main {
+    height: calc(100% - 150px);
+    width: calc(100%);
+    display: flex;
+    padding-top: 160px;
+    margin-bottom: 90px;
+    background-color: rgb(250, 223, 174);
+    // &_copyrights {
+      // }
+      &_pic {
+        width: 60%;
+      }
+      &_about {
+        color: rgba(31, 112, 31, 0.849);
+        // background-color: skyblue;
+        height: 100%;
+        width: 40%;
+        padding: 120px 0px 0px 30px;
+        font-size: 50px;
+      }
+    }
+    
+  .service {
+    background-color: rgb(207, 219, 188);
+    height: 100vh;
+    width: 100vw; 
+    padding-bottom: 10px;
+    margin: 410px 0px 200px;
+    display: flex;
+
+    &_left {
+      color: rgba(31, 112, 31, 0.849);
+      width: 30%;
+      padding: 200px 30px 0px 20px;
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        padding-top: 10px;
+        font-size: 20px;
+      }
+    }
+    &_right {
+      margin-left: auto;
+      width: 70%;
+    }  
+  }
+    
+  .account {
+    background-image: url("top1.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 40px;
+    display: flex;
+    &_left {
+      padding-top: 200px;  
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      color: rgba(255, 255, 255, 0.705);
+      font-size: 30px;
+    }
+    &_right {
+  }
+  }
+
+    .footer {
+      background-color: rgb(101, 126, 101);
+      height: 40px;
+      width: 100%;
+      &_copyright {
+        font-size: 20px;
+        line-height: 40px;
+        color: white;
+        text-align: center;
+      }
+    }
+}

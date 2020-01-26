@@ -1,0 +1,46 @@
+.body
+  .header
+    .header_logo
+      = link_to root_path, class:"btn-logo" do
+        = image_tag "logo1.png", size: "80x100", alt: "logo"
+        
+    .header_user
+      .header_user_about
+        = link_to new_user_registration_path, class:"btn-about" do
+          %p ABOUT
+
+      .header_user_signup
+        = link_to new_user_registration_path, class:"btn-signup" do
+          %p SIGN-UP
+      .header_user_login
+        = link_to new_user_session_path, class:"btn-login" do
+          %p LOG-IN
+      .header_user_menu
+        = link_to root_path, class:"btn-menu" do
+          %i.fas.fa-bars
+  .main
+    .main_copyrights
+    .main_pic
+      = image_tag "top2.jpg", size: "850x700", alt:"top2"
+    .main_about
+      %h1 テクノロジーで 
+      %h1 子育てをもっともっと楽に！ 
+  .service
+    .service_left
+      %h1 保育園での面倒な事務作業をパパッと解決！
+      %p 朝のバタバタで忙しい時間、仕事帰りのお迎え時間、疲れが残る夜に、少しでも育児を楽にして、親子の時間、また自分を過ごしたいものです。
+      %p TecTechは育児・保育に関わる事務負担を減らし、保護者・保育者の方々にとって有意義な時間を過ごして頂きたい。
+      %p そんな想いから生まれたサービスです。
+    .service_right
+      = image_tag "top3.jpg", size: "850x700", alt:"top2"
+
+  .account
+    .account_left
+      %p 新規登録
+      %p ログインはこちらから！
+
+    .account_right
+
+  .footer
+    .footer_copyright
+      %p © 2020 TecTech Inc. All rights reserved.
