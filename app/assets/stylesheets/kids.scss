@@ -1,3 +1,111 @@
-// Place all the styles related to the kids controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  .side_bar {
+    z-index: 1;
+    height: 100vh;
+    width: 300px;
+    text-align: center;
+    font-size: 80px;
+    border: 2px solid #000;
+    
+    &_information {
+      padding: 20px 0px;
+      height: calc(100% / 5);
+      a {
+        text-decoration: none;
+        color: red;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    
+    &_diary {
+      padding: 20px 0px;
+      height: calc(100% / 5);
+      a {
+        text-decoration: none;
+        color: rgb(255, 136, 0);
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    
+    &_message {
+      padding: 20px 0px;
+      height: calc(100% / 5);
+      a {
+        text-decoration: none;
+        color: rgb(51, 255, 0);
+      } 
+      p {
+        font-size: 20px;
+      }
+    }
+    
+    &_picture {
+      padding: 20px 0px;
+      height: calc(100% / 5);
+      a {
+        text-decoration: none;
+        color: rgb(0, 225, 255);
+      } 
+      p {
+        font-size: 20px;
+      }   
+    }
+    
+    &_contact {
+      padding: 20px 0px;
+      height: calc(100% / 5);
+      a {
+        text-decoration: none;
+        color: rgb(153, 0, 255);
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+    
+  .main {
+    height: 100vh;
+    width: calc(100% - 300px);
+    &_header {
+      background-color: skyblue;
+      height: 20%;
+      display: flex;
+      &_kid {
+        background-color: turquoise;
+        width: 50%;
+      }
+      &_user {
+        background-color: rgb(137, 181, 247);
+        width: 40%;
+      }
+      &_menu {
+        background-color: rgb(81, 69, 245);
+        width: 10%;
+      }
+    } 
+    &_posts {
+      height: 80%;
+      width: 100%;
+      &_post {
+        background-color: rgb(175, 69, 245);
+        p {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}

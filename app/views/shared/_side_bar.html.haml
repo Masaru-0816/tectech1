@@ -1,0 +1,25 @@
+.side_bar
+  .side_bar_information
+    = link_to posts_path, class:"btn-information" do
+      %i.far.fa-newspaper
+      %p お知らせ
+
+  .side_bar_diary
+    = link_to root_path, class:"btn-diary" do
+      %i.fas.fa-pencil-alt    
+      %p 日誌
+
+  .side_bar_message
+    = link_to posts_path, class:"btn-message" do
+      %i.far.fa-comments
+      %p メッセージ
+
+  .side_bar_picture
+    = link_to posts_path, class:"btn-picture" do
+      %i.fas.fa-camera-retro
+      %p 写真
+
+  .side_bar_contact
+    = link_to posts_path, class:"btn-contact" do
+      %i.fas.fa-phone
+      %p お問い合わせ

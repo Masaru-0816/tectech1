@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :kid_users
-  has_many :kids, through: :kid_users       
+  has_many :kids, through: :kid_users
 end

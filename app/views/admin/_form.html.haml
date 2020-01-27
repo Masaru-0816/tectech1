@@ -1,0 +1,43 @@
+-# = form_for kid do |f|
+-#   - if kid.errors.any?
+-#     .kid_form__errors
+-#       %h2= "#{kid.errors.full_messages.count}件のエラーが発生しました。"
+-#       %ul
+-#         - kid.errors.full_messages.each do |message|
+-#           %li= message
+-#   .kid_form__field
+-#     .kid_form__field--left
+-#       = f.label :name, class: 'kid_form__label'
+-#     .kid_form__field--right
+-#       = f.text_field :name, class: 'kid_form__input', placeholder: '児童名を入力してください'
+-#   .kid_form__field
+-#     .kid_form__field--left
+-#       %label.kid_form__label{:for => "選択者を追加"} 保護者を追加
+-#     .kid_form__field--right
+-#       .kid_form__search.clearfix
+-#         %input#user-search-field.kid_form__input{:placeholder => "追加したい保護者を入力してください", :type => "text"}/
+-#       #user-search-result
+      
+-#   .kid_form__field.clearfix
+-#     .kid_form__field--left
+-#       %label.kid_form__label{:for => "kid_保護者"} 保護者
+-#     .kid_form__field--right
+
+-#       #kid_users.js-add-user
+-#         .kid_user.clearfix.js-kid-member
+-#           %input{name: "kid[user_ids][]", type: "hidden", value: current_user.id}
+-#           %p.kid-user__name= current_user.name
+
+-#         - kid.users.each do |user|
+-#           - if current_user.name != user.name
+-#             .kid_user.clearfix.js-kid-member
+-#               %input{name: "kid[user_ids][]", type: "hidden", value: user.id}
+-#               %p.kid_user__name
+-#                 = user.name 
+-#               %a.user-search-remove.kid_user__btn.kid_user__btn--remove.js-remove-btn
+-#                 削除
+
+-#   .kid_form__field.clearfix
+-#     .kid_form__field--left
+-#     .kid_form__field--right
+-#       = f.submit class: 'kid_form__action-btn'
