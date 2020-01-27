@@ -15,8 +15,6 @@ ActiveRecord::Schema.define(version: 2020_01_26_080038) do
   create_table "kid_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "kid_id"
     t.bigint "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.index ["kid_id"], name: "index_kid_users_on_kid_id"
     t.index ["user_id"], name: "index_kid_users_on_user_id"
   end
